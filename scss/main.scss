@@ -1,0 +1,11 @@
+@import "./blocks/mixin";
+@import "./blocks/_footer.scss";
+@import "./blocks/_header.scss";
+
+.container {
+	width: 100%;
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 96px; /* отступы с обеих сторон */
+	
+}
