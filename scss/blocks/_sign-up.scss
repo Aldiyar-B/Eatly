@@ -1,0 +1,119 @@
+@import './mixin.scss'; // Импорт файла mixins.scss
+@import './common';
+
+.hidden {
+    display: none;
+}
+
+.sign-up{
+	background-color: #fff;
+	position: relative;
+    display: flex;
+    max-width: 1450px;
+    padding: 5px;
+    margin: 25px auto;
+	@include font-poppins;
+
+	
+    // transform: translateY(-100%);
+    transition: transform 0.3s ease;
+	&__authtarization{
+		text-align: center;
+		margin: 50px 200px 100px;
+	}	
+	&__info{
+		padding: 15px
+}
+	&__title{
+	@include font-poppins;
+		font-size: 35.25px;
+		font-weight: 600;
+		line-height: 44.06px;
+		letter-spacing: -0.04em;
+		text-align: center;
+		
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+	}
+	&__form-item{
+		width: 382.44px;
+		height: 74.49px;
+		border-radius: 18px;
+		border: none;
+		background-color: #F5F5F5;
+		
+	}
+	&__button{
+		width: 382.44px;
+		height: 74.49px;
+		margin-bottom: 25px;
+	}
+	&__licence{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	
+}
+.socials{
+	// display: flex;
+	// gap: 20px;
+}
+.google{
+	width: 183.44px;
+	height: 63.37px;
+	border-radius: 13.34px;
+	text-align: center;
+	background-color: #F5F5F5;
+	background:#F5F5F5 url("/assets/icons/G.png") center center no-repeat ;
+	&:hover{
+		background-color: rgba(98, 93, 93, 0.425)
+	}
+}
+.apple{
+	width: 183.44px;
+	height: 63.37px;
+	border-radius: 13.34px;
+	text-align: center;
+	background-color: #F5F5F5;
+	background:#F5F5F5 url("/assets/icons/apple.png") center center no-repeat ;
+	&:hover{
+		background-color: rgba(98, 93, 93, 0.425)
+	}
+}
+
+.sign-ip{
+	&__right{
+		background-color: #6C5FBC;
+		// position: relative;
+
+		flex: 0 1 50%;
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
+		
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
+	}
+	&__decor{
+		// position: absolute;
+		
+		bottom: 10%;
+		left: 15%;
+		padding-top: 50px;
+		padding-left: 50px;
+	}
+	
+
+}
+.sign-up__text{
+	color: white;
+	text-align: center;
+	opacity: 0.5;
+}

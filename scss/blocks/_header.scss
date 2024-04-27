@@ -2,14 +2,21 @@
 @import './mixin.scss'; // Импорт файла mixins.scss
 @import './common';
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	height: 135px;
-    margin-top: 48px;
-	padding: 0px 0px 25px;
-    border-bottom: 2px solid #cbcbcb;
-    column-gap: 3%;
+	position: sticky;
+	top: 0; // Фиксируем заголовок в верхней части экрана
+	z-index: 1000;
+	background-color: #F9F9F9;
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 135px;
+		// margin-top: 48px;
+		padding: 0px 90px 0px;
+		border-bottom: 2px solid #cbcbcb;
+		column-gap: 3%;	
+	}
+   
     &__left,
     &__right,
 	&__brand {

@@ -17,32 +17,104 @@
 
 <body>
 
-	<header class="header container">
-		<div class="header__left">
-			<a class="header__brand" href="#">
-				<img src="./assets/img/Logo.svg" class="header__logo" alt="Eatly logo" \>
-				<h2 class="header__title">eatly</h2>
-			</a>
+	<header class="header ">
+		<div class="header__container container">
+			<div class="header__left">
+				<a class="header__brand" href="#">
+					<img src="./assets/img/Logo.svg" class="header__logo" alt="Eatly logo" \>
+					<h2 class="header__title">eatly</h2>
+				</a>
 
-			<nav class="header__nav">
-				<ul class="header__list">
-					<li class="nav__item link" href="#menu"><a class="item__link" href="#">Menu</a></li>
-					<li class="nav__item link" href="#blog"><a class="item__link" href="#">Blog</a></li>
-					<li class="nav__item link" href="#pricing"> <a class="item__link" href="#">Pricing</a></li>
-					<li class="nav__item link" href="#contacts"><a class="item__link" href="#">Contacts</a></li>
-				</ul>
-			</nav>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="nav__item link" href="#menu"><a class="item__link" href="#">Menu</a></li>
+						<li class="nav__item link" href="#blog"><a class="item__link" href="#">Blog</a></li>
+						<li class="nav__item link" href="#pricing"> <a class="item__link" href="#">Pricing</a></li>
+						<li class="nav__item link" href="#contacts"><a class="item__link" href="#">Contacts</a></li>
+					</ul>
+				</nav>
 
-		</div>
-		<div class="header__right">
-			<div class="header__auth buttons">
-				<button class="auth__button button button--white">Login</button>
-				<button class="auth__button button button--purple">Sign Up</button>
+			</div>
+			<div class="header__right">
+				<div class="header__auth buttons">
+					<button id="login" class="auth__button button button--white">Login</button>
+					<button id="sign-up" class="auth__button button button--purple">Sign Up</button>
+				</div>
 			</div>
 		</div>
 	</header>
 
 	<main class="main">
+		<div class="modal-background"></div>
+
+		<div class="sign-up hidden" id="modalSignUp">
+			<div class="sign-up__info">
+				<a class="header__brand" href="#">
+					<img src="./assets/img/Logo.svg" class="header__logo" alt="Eatly logo" \>
+					<h2 class="header__title">eatly</h2>
+				</a>
+				<div class="sign-up__authtarization">
+					<h2 class="sign-up__title">Sign Up To eatly</h2>
+					<br>
+					<div class="socials">
+						<button class="google"></button>
+						<button class="apple"></button>
+					</div>
+					<br>
+					<p class="grey">OR</p>
+					<hr />
+					<form class="sign-up__form">
+						<input class="sign-up__form-item" type="text" placeholder="FULL NAME" />
+						<input class="sign-up__form-item" type="email" placeholder="EMAIL" />
+						<input class="sign-up__form-item" type="password" placeholder="PASSWORD" />
+						<button class="sign-up__button button--purple" type="submit">SIGN up</button>
+					</form>
+					<a href="#">Already Have An Account? <span class="purple">Log In</span></a>
+				</div>
+				<div class="sign-up__licence">
+					<div class=" grey">Privacy Policy</div>
+					<div class=" grey">Copyright 2022</div>
+				</div>
+
+			</div>
+			<div class="sign-ip__right">
+				<div class="sign-ip__decor decor">
+					<div class="decor__img">
+						<img src="./assets/img/world--food.png" alt="World Food">
+
+						<div class="meal decor__meal">
+							<div class="meal-item decor__meal-inner">
+								<img class="meal__img" src="./assets/img/world--food.png" alt="World Food small">
+								<div class="meal__info">
+									<h3 class="meal__title">Chiken Hell</h3>
+									<p class="meal__description">On The Way</p>
+								</div>
+								<p class="meal__time">3:09 PM</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="decor__stats">
+						<div class="decor__stats-inner">
+
+							<img src="./assets/img/world--stats.png" alt="World stats">
+						</div>
+					</div>
+
+				</div>
+
+				<h2 class="sign-up__title white">Find Foods With Love </h2>
+				<p class="sign-up__text">
+					Eatly Is The Food Delivery Dashboard And Having More Than 2K+ Dishes Including
+					Asian, Chinese,
+					Italians And Many More. Our Dashboard Helps You To Manage Orders And Money.</p>
+				<!-- <button class="close-modal" id="closeModal">Закрыть</button> -->
+
+			</div>
+
+		</div>
+
+
 		<section class="world container">
 			<div class="world__left">
 				<div class="line-with-text">
@@ -130,9 +202,11 @@
 					<img src="./assets/img/Mobile.png" alt="download image">
 				</div>
 				<div class="download__info">
-					<h2 class="download__title big">Premium <span class="purple">Quality </span> For Your Health</h2>
+					<h2 class="download__title big">Premium <span class="purple">Quality </span> For Your Health
+					</h2>
 					<ul class="download__items">
-						<li class="download__item grey">Premium quality food is made with ingredients that are packed
+						<li class="download__item grey">Premium quality food is made with ingredients that are
+							packed
 							with
 							essential vitamins, minerals.</li>
 						<li class="download__item grey">These foods promote overall wellness by support healthy
