@@ -1,10 +1,11 @@
 // style.scss
 @import './mixin.scss'; // Импорт файла mixins.scss
-
+@import './common';
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+	height: 135px;
     margin-top: 48px;
 	padding: 0px 0px 25px;
     border-bottom: 2px solid #cbcbcb;
@@ -53,24 +54,9 @@
 
 .auth{
 	&__button{
-		text-align: center;
-		@include font-inter;
-		font-weight: bold;
+
 		width: 121px;
 		height: 52px;
-		&-login{
-			color: #606060;
-		}
-		&-signup{
-			color: white;
-			background-color: #6C5FBC;
-			border-radius: 18px;
-			&:hover{
-				background-color: white;
-				color: #6C5FBC;
-				border:#6C5FBC solid 0.5px ;
-				transition: 0.8s;
-			}
-		}
+		
 	}
 }

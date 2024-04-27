@@ -1,0 +1,57 @@
+@import './mixin.scss'; // Импорт файла mixins.scss
+@import './common';
+
+
+.footer{
+	background: #EAEAEA;
+	// width: 1440px;
+	height: 345px;
+	margin: 0 auto;
+	
+	&__container{
+		max-width: 1280px;
+		margin: 0 auto;
+		}
+	&__head{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 90px ;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #cbcbcb;
+		margin-bottom: 50px;
+	}
+	
+	&__end{
+
+	}
+	&__other{
+display: flex;
+justify-content: space-between;
+	}
+	&__messangers{
+		display: flex;
+		gap: 50px;
+	}
+}
+
+.footer__end {
+}
+.footer__other {
+}
+.footer__licence {
+}
+.grey {
+}
+.footer__messangers {
+}
+.footer__item {
+}
+
+
+.menu{
+	display: flex;
+	list-style: none;
+	gap: 35px;
+	@include font-inter;
+	align-items: center;
+}

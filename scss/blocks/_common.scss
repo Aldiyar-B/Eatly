@@ -1,0 +1,242 @@
+
+.grey{
+	color: #676767;
+	@include font-inter;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 44px;
+	
+}
+.list-reset{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.red{
+	color: red;
+}
+.meal{
+	&-item{
+	}
+
+	&__img{
+		max-width: 77px;
+		max-height: 77px;
+		margin: 10px 0 0 10px;
+		position: relative;
+
+	}
+	&__info{
+		margin-top: 25px;
+		margin-left: 24px;
+		
+	}
+	&__title{
+	@include font-poppins;
+	font-size: 15.59px;
+	font-weight: 600;
+	}
+	&__description{
+	@include font-poppins;
+		font-size: 9.84px;
+		font-weight: 500;
+	}
+	&__time{
+		@include font-poppins;
+		font-size: 10px;
+		font-weight: 500;
+		line-height: 15px;
+		color: #ACADB9;
+		position: absolute;
+		top: 70%;
+		left: 80%;
+	}
+}
+.time{
+	color: #8E97A6;
+	@include font-inter;
+	font-size: 19.34px;
+	font-weight: 400;
+	line-height: 25.79px;
+	text-align: left;
+	
+}
+.price{
+	@include font-inter;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 40.34px;
+	text-align: left;
+}
+.add{
+	width: 43.83px;
+	height: 39.72px;
+	top: 3208.28px;
+	left: 251.4px;
+	gap: 0px;
+	border-radius: 10px;
+	opacity: 0px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	background: #323142;	
+	&:hover{
+		background: #aa6850;	
+
+		transition: 0.2s;
+
+	}
+}
+.button__link{
+	
+}
+body{
+	background-color: #F9F9F9;
+}
+.button{
+	@include font-inter;
+	text-align: center;
+	font-weight: bold;
+	width: 121px;
+	height: 52px;
+	&--white-border{
+		border:#6C5FBC solid 0.5px;
+		border-radius: 18px;
+		color: #6C5FBC;
+	}
+	&--white{
+		color: #606060;
+		
+	}
+	&--purple{
+		color: white;	
+		background-color: #6C5FBC;
+		border-radius: 18px;
+		
+		&:hover{
+			background-color: white;
+			color: #6C5FBC;
+			border:#6C5FBC solid 0.5px ;
+			transition: 0.8s;
+		}
+		
+	}
+
+	
+}
+
+.star{
+	margin-left: 0px; 
+	
+	
+	&-rating{
+		color: gold;
+		font-size: 24px; 
+		margin-left: 20px;
+	}
+&-rating-container{
+	margin-top: 33px;
+
+	display: flex;
+	align-items: center;
+	@include font-inter
+	
+}
+}
+.rating-number {	
+	margin-left: 10px; 
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	color: rgb(119,128,141);
+	align-items: center;
+}
+
+
+.tag{
+	
+	@include font-inter;
+	padding: 3px 8px 3px;
+	border-radius: 30px;
+	width: 75.88px;
+	height: 24.84px;
+	border-radius: 5px;
+	padding: 3px 5px;
+	&--yellow{
+		background-color: #F7EDD0;		
+		color:#DAA31A;
+		
+	}
+	&--red{
+		background-color: #F7C5BA;		
+		color:#FB471D;
+		
+	}
+	&--green{
+		background-color: #72e7a1;		
+		color:#309D5B;
+	}
+}
+
+
+.chart__select {
+    font-weight: 300;
+    font-size: 19px;
+    color: #1a202c;
+    padding: 12px 18px;
+    background: #fafafa;
+	border: none;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+  
+	&__track {
+	  overflow: hidden;
+	  display: flex;
+	}
+  
+	&__item {
+	  min-width: 100%; // чтобы элементы слайдера были шириной во всю карусель
+	  transition: transform 0.5s ease; // плавная анимация при смене слайдов
+	  // Стилизуйте ваш слайд (например, рамки, отступы)
+	}
+  &__content{
+	display: flex;
+	gap: 20px	;
+  }
+	&__button {
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  // Стилизация кнопок
+  
+	  &--prev {
+		left: 10px;
+	  }
+  
+	  &--next {
+		right: 10px;
+	  }
+	}
+  
+	// Пример использования переменной и миксина в SCSS
+	$slider-button-color: #fff;
+  
+	@mixin slider-button-style {
+	  background-color: $slider-button-color;
+	  border: none;
+	  cursor: pointer;
+	  // Дополнительные стили
+	}
+  
+	.slider__button {
+	  @include slider-button-style;
+	}
+}
+
+
